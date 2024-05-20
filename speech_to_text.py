@@ -1,21 +1,31 @@
 import speech_recognition as sr
-import speech_recognition as sr
-import pyaudio
+from tkinter import *
+
+def speech_to_text(root):
+    # Initialize recognizer
+    recognizer = sr.Recognizer()
+    text.insert("Let's speak!!")
+    
+    try:
+        # Use the microphone as source for input
+        with sr.Microphone() as source:
+            print("Adjusting for ambient noise, please wait...")
+            recognizer.adjust_for_ambient_noise(source, duration=1)  # Adjust for ambient noise
+            
+            print("Recording for 5 seconds...")
+            audio_data = recognizer.record(source, duration=5)
+            
+            print("Recognizing your text.............")
+            text = recognizer.recognize_google(audio_data)
+            print("You said: " + text)
+            return text
+        
+    except sr.UnknownValueError:
+        print("Google Speech Recognition could not understand your audio")
+        return "error"
+
+    except sr.RequestError as e:
+        print(f"Could not request results from Google Speech Recognition service; {e}")
+        return "error"
 
 
-def speech_to_text():
-
-    init_rec = sr.Recognizer()
-    print("Let's speak!!")
-    with sr.Microphone() as source:
-        audio_data = init_rec.listen(source)
-        print("Recognizing your text.............")
-        text = init_rec.recognize_google(audio_data)
-        print(text)
-        return text
-    # except sr.UnknownValueError:
-    #     print("Google Speech Recognition could not understand your audio")
-    # except sr.RequestError as e:
-    #     print("Could not request results from Google Speech Recognition service; {0}".format(e))
-
-speech_to_text()

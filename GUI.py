@@ -16,7 +16,7 @@ root.resizable(False, False)
 root.config(bg="#000000")
 
 cnt = 0
-
+#no
 # Function to log messages to both terminal and Text widget
 def log_message(message):
     print(message)  # Print to terminal

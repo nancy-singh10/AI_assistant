@@ -3,7 +3,6 @@ import speech_to_text
 import datetime
 import webbrowser
 import weather
-import openai
 import cookie
 
 def Action(data):
@@ -19,7 +18,7 @@ def Action(data):
         text_speech.text_to_speech(response)
         return response
     
-    elif any(greeting in user_data for greeting in ["open web automation", "open","web","automation"]):
+    if any(greeting in user_data for greeting in ["open web automation", "open","web","automation"]):
         ans = cookie.cookie()
         text_speech.text_to_speech("Opening Web Automation project")
         return "Opening Web Automation project"

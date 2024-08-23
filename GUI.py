@@ -98,9 +98,9 @@ image_label = Label(frame, image=image)
 image_label.grid(row=1, column=0, pady=20)
 
 # Adding some text to root
-output_text = Text(root, font=("courier 10 bold"), bg="#605E65")
-output_text.grid(row=2, column=0)
-output_text.place(x=110, y=505, width=400, height=70)
+output_text=Text(root,font=("courier 10 bold"),bg="#605E65")
+output_text.grid(row=2,column=0)
+output_text.place(x=110,y=505,width=400,height=70)
 
 # Entry widget
 entry = Entry(root, justify=CENTER)

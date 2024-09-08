@@ -12,7 +12,7 @@ An AI assistant that automates your daily tasks through speech and text interact
 - **Powered by Python**: Uses Python modules like `speech_recognition`, `pyttsx3`, `requests`, and integrates with OpenAI for advanced text processing.
 
 ## Demo
-![Demo Image](link-to-demo-screenshot-or-video)
+![Demo Image](images/readme.png)
 
 ## Technologies Used
 - **Python Modules**:

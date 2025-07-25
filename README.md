@@ -3,7 +3,7 @@
 A voice-driven assistant designed to **empower individuals with mobility impairments** by automating daily tasks without physical interaction. The assistant enables **hands-free control** using speech commands and provides responses through both **voice and text**.
 
 ---
-
+![Demo Screenshot](images/readme.png)
 ## Targeted Audience: People with Physical Disabilities
 
 Individuals with mobility impairments often face challenges performing routine tasks on their devices, such as browsing websites or checking weather updates. Typing and manual navigation can be difficult or even impossible.  

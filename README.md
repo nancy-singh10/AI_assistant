@@ -1,33 +1,47 @@
+# Voice-Controlled Accessibility Assistant
 
-# AI Assistant
+A voice-driven assistant designed to **empower individuals with mobility impairments** by automating daily tasks without physical interaction. The assistant enables **hands-free control** using speech commands and provides responses through both **voice and text**.
 
-An AI assistant that automates your daily tasks through speech and text interactions. You can ask questions via voice or text, and the assistant will respond both through voice and text. It can perform various actions such as opening websites (e.g., Google, Facebook, YouTube) and providing weather updates.
+---
+
+## Targeted Audience: People with Physical Disabilities
+
+Individuals with mobility impairments often face challenges performing routine tasks on their devices, such as browsing websites or checking weather updates. Typing and manual navigation can be difficult or even impossible.  
+This assistant addresses these challenges by enabling **voice-based control**, allowing users to operate their systems **independently and effortlessly**.
+
+---
+
+## Solution
+
+The Voice-Controlled Accessibility Assistant uses **speech recognition and text-to-speech technology** to provide:
+- **Complete voice interaction** for essential tasks.
+- Opening popular websites like Google, Facebook, and YouTube.
+- Providing real-time weather updates.
+- Responses in both text and voice for enhanced accessibility.
+
+---
 
 ## Features
-- **Speech and Text Input**: Communicate with the assistant via speech or text.
-- **Voice and Text Output**: Responses are given both in text and voice formats.
-- **Automated Tasks**:
-  - Open popular websites like Google, Facebook, and YouTube.
-  - Provide weather updates for your location.
-- **Powered by Python**: Uses Python modules like `speech_recognition`, `pyttsx3`, `requests`, and integrates with OpenAI for advanced text processing.
+- **Speech and Text Input:** Communicate with the assistant via voice or text.
+- **Voice and Text Output:** Get responses through audio and text.
+- **Automated Tasks:**
+  - Open websites like Google, YouTube, and Facebook.
+  - Fetch real-time weather information.
 
-## Demo
-![Demo Image](images/readme.png)
+---
 
 ## Technologies Used
-- **Python Modules**:
-  - `speech_recognition`: For recognizing voice input.
-  - `pyttsx3`: For converting text to speech.
-  - `requests`: For accessing weather and other API services.
-  - `openai`: For advanced text-based responses.
-- **APIs**:
-  - OpenAI API: For NLP-based responses.
-  - Weather API: For weather updates.
-  
+- **Python Libraries:**
+  - `speech_recognition` – Voice input.
+  - `pyttsx3` – Text-to-speech conversion.
+  - `requests` – API data fetching.
+- **APIs:**
+  - Weather API – Real-time weather updates.
+
+---
+
 ## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd AI-Assistant
-
+Clone the repository:
+```bash
+git clone <repository-url>
+cd Voice-Controlled-Accessibility-Assistant
